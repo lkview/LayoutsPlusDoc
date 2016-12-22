@@ -36,5 +36,16 @@ The variable files must contain the following:
 The value must be set to _ImageAboveName_.
 
 #### SKU_LType
-abc
+The choices are:
+##### A
+This shows the SKU number in bold on the left, and the price on the right.
+##### ...more coming
 
+#### MaxImageHeight
+This is the maximum height of the images in inches. It is also the height of the image box, even if the image is not this tall.
+
+#### MaxNameHeight
+This is the maximum height of the product name in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...).
+
+#### NameLRMg
+The left & right margin of the product name in inches. 
