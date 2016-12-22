@@ -36,4 +36,5 @@ The variable files must contain the following:
 The value must be set to _ImageAboveName_.
 
 #### SKU_LType
+abc
 
