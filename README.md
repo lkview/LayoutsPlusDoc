@@ -42,9 +42,9 @@ Sample csv:
 **ImageDesc_LType** — The value must be set to **ImageAboveName**.
 
 **SKU_LType** — The choices are:
-**A** — This shows the SKU number in bold on the left, and the price on the right. A thin rule is above both.
-
-**A2** — This is the same as "A", except that the currency symbol and the cents are shown at half the size of the value to the left of the decimal place, and top aligned. 
+* A — This shows the SKU number in bold on the left, and the price on the right. A thin rule is above both.
+* B —  Not invented yet
+* C —  Not invented yet 
 
 **MaxImageHeight** — This is the maximum height of the images in inches. It is also the height of the image box, even if the image is not this tall.
 
