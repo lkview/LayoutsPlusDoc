@@ -18,7 +18,9 @@ This layout was originally developed to support corvettemods. It displays:
 * SKU number
 * price
 
-In order to support this layout, the variable.csv file must contain the following:
+In order to support this layout, the variable.csv file must contain all of the parameter labels shown in this sample csv. The labels are required as shown. The values (to the right of the comma) are explained below.
+
+Sample csv:
 
     ImageDesc_LType,ImageAboveName
     SKU_LType,A
@@ -31,38 +33,51 @@ In order to support this layout, the variable.csv file must contain the followin
     PriceWidth,0.8
     SKUFontSize,9
     PriceFontSize,9
+    Currency,$
+    SpaceCurrency,false
+    PriceStyle,simple
+    PriceFormat,
+
 
 **ImageDesc_LType** — The value must be set to **ImageAboveName**.
 
-#### SKU_LType
-The choices are:
-##### A
-This shows the SKU number in bold on the left, and the price on the right. A thin rule is above both.
+**SKU_LType** — The choices are:
+**A** — This shows the SKU number in bold on the left, and the price on the right. A thin rule is above both.
 
-##### ...more SKU layouts coming
+**A2** — This is the same as "A", except that the currency symbol and the cents are shown at half the size of the value to the left of the decimal place, and top aligned. 
 
-#### MaxImageHeight
-This is the maximum height of the images in inches. It is also the height of the image box, even if the image is not this tall.
+**MaxImageHeight** — This is the maximum height of the images in inches. It is also the height of the image box, even if the image is not this tall.
 
 **MaxNameHeight** — This is the maximum height of the product name in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...).
 
-#### NameLRMg
-The left & right margin of the product name in inches. 
+**NameLRMg** — The left & right margin of the product name in inches. 
 
-#### NameFontSize
-The font size of the product name in points. This can be a decimal number.
+**NameFontSize** — The font size of the product name in points. This can be a decimal number.
 
-#### NameLeading
-The leading of the product name in points. This can be a decimal number.
+**NameLeading** — The leading of the product name in points. This can be a decimal number.
 
-#### SKUWidth
-The width of the box containing the SKU number, in inches. The SKU number is left-aligned.
+**SKUWidth** — The width of the box containing the SKU number, in inches. The SKU number is left-aligned.
 
-#### PriceWidth
-The width of the box containing the price, in inches. The price is right-aligned.
+**PriceWidth** — The width of the box containing the price, in inches. The price is right-aligned.
 
-#### SKUFontSize
-Font size of the SKU number.
+**SKUFontSize** — Font size of the SKU number.
 
-#### PriceFontSize
-Font size of the price.
+**PriceFontSize** — Font size of the price.
+
+**Currency** — Currency symbol
+**SpaceCurrency** — Must be true or false, indicating whether there should be a space after the currency symbol.
+**PriceStyle** — The choices are:
+**Simple** — The symbol, left side, and right side are all the same size
+**Superior** — The symbol and the right side are half size, and top aligned
+
+**PriceFormat** — The choices are:
+
+    #,###.##
+    #.###,##
+    # ###.##
+    # ###,##
+    #'###.##
+    #,##,###.##
+    #.###
+    #,###.###
+
