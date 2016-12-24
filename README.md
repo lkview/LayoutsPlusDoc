@@ -36,7 +36,7 @@ Sample csv:
     Currency,$
     SpaceCurrency,false
     PriceStyle,simple
-    PriceFormat,
+    PriceFormat,#,###.##
 
 
 **ImageDesc_LType** — The value must be set to **ImageAboveName**.
@@ -65,12 +65,14 @@ Sample csv:
 **PriceFontSize** — Font size of the price.
 
 **Currency** — Currency symbol
-**SpaceCurrency** — Must be true or false, indicating whether there should be a space after the currency symbol.
-**PriceStyle** — The choices are:
-**Simple** — The symbol, left side, and right side are all the same size
-**Superior** — The symbol and the right side are half size, and top aligned
 
-**PriceFormat** — The choices are:
+**SpaceCurrency** — Must be true or false, indicating whether there should be a space after the currency symbol.
+
+**PriceStyle** — The choices are:
+* Simple — The symbol, left side, and right side are all the same size
+* Superior — The symbol and the right side are half size, and top aligned
+
+**PriceFormat** — *not yet available* The choices are:
 
     #,###.##
     #.###,##
