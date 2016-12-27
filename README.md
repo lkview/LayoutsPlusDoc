@@ -1,15 +1,20 @@
 # LindenPlus
-This is about parameterized Linden layouts. 
-It uses the system plug-in called **LindenPlus**. 
-It requires that variables be defined in the private dropbox folder called **_CoDVariables**. The naming convention is as follows:
+This is about parameterized Linden layouts. To use LindenPlus:
+1. Select the plug-in called **LindenPlus**
+2. Create a csv per the specifications below
+3. Place the csv in the images/codvariables ftp folder
 
-    account id_-variables.csv
+## Naming convention for the csv file
+The naming convention is as follows:
+
+    _account id_-variables.csv
 
 For example, 
 
     corvettemods-variables.csv
 
-Any undefined variable will be assigned its default.
+## Naming convention for the csv file if you need more than one
+If you require additional csv files for the same customer, you need to specify a suffix. An example might be "namewrap".
 
 ### Product layout: *ImageAboveName*
 This layout was originally developed to support corvettemods. It displays:
@@ -18,7 +23,7 @@ This layout was originally developed to support corvettemods. It displays:
 * SKU number
 * price
 
-In order to support this layout, the variable.csv file must contain all of the parameter labels shown in this sample csv. The labels are required as shown. The values (to the right of the comma) are explained below.
+In order to support this layout, the variable.csv file must contain all of the parameter labels shown in this sample csv. The values (to the right of the comma) are the defaults.
 
 Sample csv:
 
@@ -66,7 +71,7 @@ Sample csv:
 
 **Currency** — Currency symbol (Default is $)
 
-**SpaceCurrency** — Must be true or false, indicating whether there should be a space after the currency symbol. (Default is false)
+**SpaceCurrency** — If there should be a space after the currency symbol and before the price, this value must be "yesspace". (Default is "nospace")
 
 **PriceStyle** — The choices are:
 * Simple — The symbol, left side, and right side are all the same size
