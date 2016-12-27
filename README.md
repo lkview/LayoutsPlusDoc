@@ -24,6 +24,7 @@ corvettemods-namewrap-variables.csv
 The following are the "Primary Layouts", which refer to the overall look of the product presentation. Within a Primary Layout, there is the ability to select and configure price presentation. 
 
 The Primary Layouts available so far are:
+
 [ImageAboveName](#imageabovename)  
 [NameWrapAroundImage](#namewraparoundimage)
 
@@ -53,6 +54,8 @@ Sample csv:
     SpaceCurrency,false
     PriceStyle,simple
     PriceFormat,#,###.##
+    PriceColor,FF0000
+    NumericCharWidth,0.145
 
 
 **ImageDesc_LType** — The value must be set to **ImageAboveName**.
@@ -100,9 +103,16 @@ The choices are:
     #.###
     #,###.###
 
+**PriceColor** — Express as RGB hex. Default is FF0000
+
+**NumericCharWidth** —  This is required only if **PriceStyle** is set to _Superior_. The value is the width of one numeric character at the **PriceFontSize**.
+
+
+
 ### *NameWrapAroundImage*
 This layout was originally developed to support corvettemods. It displays:
 * product image
 * product name
 * SKU number
 * price (either simple or superior)
+
