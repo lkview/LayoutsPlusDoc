@@ -6,22 +6,33 @@ This is about parameterized Linden layouts. To use LindenPlus:
 
 ## Naming convention for the csv file
 The naming convention is as follows:
-
-    _account id_-variables.csv
+_account id_-variables.csv
 
 For example, 
-
-    corvettemods-variables.csv
+corvettemods-variables.csv
 
 ## Naming convention for the csv file if you need more than one
 If you require additional csv files for the same customer, you need to specify a suffix. An example might be "namewrap".
 
-### Product layout: *ImageAboveName*
+The naming convention is as follows:
+_account id_-_suffix_-variables.csv
+
+For example,
+corvettemods-namewrap-variables.csv
+
+## Primary Layouts
+The following are the "Primary Layouts", which refer to the overall look of the product presentation. Within a Primary Layout, there is the ability to select and configure price presentation. 
+
+The Primary Layouts available so far are:
+[ImageAboveName](#ImageAbovename)
+[NameWrapAroundImage](#NameWrapAroundImage)
+
+### *ImageAboveName*
 This layout was originally developed to support corvettemods. It displays:
 * product image
 * product name
 * SKU number
-* price
+* price (either simple or superior)
 
 In order to support this layout, the variable.csv file must contain all of the parameter labels shown in this sample csv. The values (to the right of the comma) are the defaults.
 
@@ -89,3 +100,9 @@ The choices are:
     #.###
     #,###.###
 
+### *NameWrapAroundImage*
+This layout was originally developed to support corvettemods. It displays:
+* product image
+* product name
+* SKU number
+* price (either simple or superior)
