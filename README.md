@@ -24,8 +24,8 @@ corvettemods-namewrap-variables.csv
 The following are the "Primary Layouts", which refer to the overall look of the product presentation. Within a Primary Layout, there is the ability to select and configure price presentation. 
 
 The Primary Layouts available so far are:
-[ImageAboveName](#ImageAbovename)  
-[NameWrapAroundImage](#NameWrapAroundImage)
+[ImageAboveName](#imageabovename)  
+[NameWrapAroundImage](#namewraparoundimage)
 
 ### *ImageAboveName*
 This layout was originally developed to support corvettemods. It displays:
