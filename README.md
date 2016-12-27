@@ -14,17 +14,17 @@ corvettemods-variables.csv
 ## Naming convention for the csv file if you need more than one
 If you require additional csv files for the same customer, you need to specify a suffix. An example might be "namewrap".
 
-The naming convention is as follows:
+The naming convention is as follows:  
 _account id_-_suffix_-variables.csv
 
-For example,
+For example,  
 corvettemods-namewrap-variables.csv
 
 ## Primary Layouts
 The following are the "Primary Layouts", which refer to the overall look of the product presentation. Within a Primary Layout, there is the ability to select and configure price presentation. 
 
 The Primary Layouts available so far are:
-[ImageAboveName](#ImageAbovename)
+[ImageAboveName](#ImageAbovename)  
 [NameWrapAroundImage](#NameWrapAroundImage)
 
 ### *ImageAboveName*
