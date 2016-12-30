@@ -37,7 +37,6 @@ Sample csv:
     PriceStyle,simple
     PriceFormat,#,###.##
     PriceColor,FF0000
-    NumericCharWidth,0.145
 
 
 **ImageDesc_LType** — The value must be set to **ImageAboveName**.
@@ -87,7 +86,7 @@ The choices are:
 
 **PriceColor** — Express as RGB hex. Default is FF0000
 
-**NumericCharWidth** —  This is required only if **PriceStyle** is set to _Superior_. The value is the width of one numeric character at the **PriceFontSize**.
+**NumericCharWidth** —  **Not required.** This is needed only if (a)&nbsp;**PriceStyle** is set to _Superior_ and (b)&nbsp;the results look like they require tweaking. The value is the width of one numeric character at the **PriceFontSize**.
 
 
 
@@ -97,11 +96,8 @@ This layout displays:
 * SKU number
 * Price (either simple or superior)
 
-**Example #1: _Name Wrap Around Image_ with _simple_ price format**
-image not yet available
-
-**Example #2: _Name Wrap Around Image_ with _superior_ price format**
-<img src="http://app.catalog-on-demand.com/images/linden_layouts/linden-image-over-prodname-superior-price.PNG" width="600">
+**Example #1: _Name Wrap Around Image_ with _superior_ price format**
+<img src="http://app.catalog-on-demand.com/images/linden_layouts/linden-prodname-wrap-image-superior-price.PNG" width="600">
 
 In order to support this layout, the variable.csv file must contain all of the parameter labels shown in this sample csv. The values (to the right of the comma) are the defaults.
 
@@ -123,54 +119,41 @@ Sample csv:
     PriceStyle,simple
     PriceFormat,#,###.##
     PriceColor,FF0000
-    NumericCharWidth,0.145
 
 
-**ImageDesc_LType** — The value must be set to NameWrapAroundImage
+**ImageDesc_LType** — The value must be set to _NameWrapAroundImage_
 
 **SKU_LType** — Same as _ImageAboveName_
 
 **MaxImageHeight** — Same as _ImageAboveName_
 
-**MaxNameHeight** — This is the maximum height of the product name in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...). (Default is 0.45)
+**MaxImageWidth** — This is the maximum width of the product image in inches. (Default is 1.4)
 
-**NameLRMg** — The left & right margin of the product name in inches. (Default is 0.1)
+**NameLRMg** — Same as _ImageAboveName_
 
-**NameFontSize** — The font size of the product name in points. This can be a decimal number. (Default is 9)
+**NameFontSize** — Same as _ImageAboveName_
 
-**NameLeading** — The leading of the product name in points. This can be a decimal number. (Default is 10.8)
+**NameLeading** — Same as _ImageAboveName_
 
-**SKUWidth** — The width of the box containing the SKU number, in inches. The SKU number is left-aligned. (Default is 0.8)
+**SKUWidth** — Same as _ImageAboveName_
 
-**PriceWidth** — The width of the box containing the price, in inches. The price is right-aligned. (Default is 0.8)
+**PriceWidth** — Same as _ImageAboveName_
 
-**SKUFontSize** — Font size of the SKU number. (Default is 9)
+**SKUFontSize** — Same as _ImageAboveName_
 
-**PriceFontSize** — Font size of the price. (Default is 9)
+**PriceFontSize** — Same as _ImageAboveName_
 
-**Currency** — Currency symbol (Default is $)
+**Currency** — Same as _ImageAboveName_
 
-**SpaceCurrency** — If there should be a space after the currency symbol and before the price, this value must be "yesspace". (Default is "nospace")
+**SpaceCurrency** — Same as _ImageAboveName_
 
-**PriceStyle** — The choices are:
-* Simple — The symbol, left side, and right side are all the same size
-* Superior — The symbol and the right side are half size, and top aligned
+**PriceStyle** — Same as _ImageAboveName_
 
-**PriceFormat** — *Not yet available*. Default is #,###.## 
-The choices are:
+**PriceFormat** — Same as _ImageAboveName_
 
-    #,###.##
-    #.###,##
-    # ###.##
-    # ###,##
-    #'###.##
-    #,##,###.##
-    #.###
-    #,###.###
+**PriceColor** — Same as _ImageAboveName_
 
-**PriceColor** — Express as RGB hex. Default is FF0000
-
-**NumericCharWidth** —  This is required only if **PriceStyle** is set to _Superior_. The value is the width of one numeric character at the **PriceFontSize**.
+**NumericCharWidth** —  Same as _ImageAboveName_
 
 
 
