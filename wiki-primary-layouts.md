@@ -1,4 +1,4 @@
-The following are the "Primary Layouts", which refer to the overall look of the product presentation. Within a Primary Layout, there is the ability to select and configure price presentation. 
+The following are the "Primary Layouts", which refer to the overall look of the product presentation. Within a Primary Layout, there is the ability to select and configure price presentation.
 
 The Primary Layouts available so far are:
 
@@ -34,9 +34,13 @@ Sample csv:
     PriceFontSize,9
     Currency,$
     SpaceCurrency,false
-    PriceStyle,simple
     PriceFormat,#,###.##
     PriceColor,FF0000
+    TextBeforeItemNum,Part #
+    FontFamily,HelveticaNeue
+    StyleProdName,none
+    StyleItemNumber,bold
+    StylePrice,simple
 
 
 **ImageDesc_LType** — The value must be set to **ImageAboveName**.
@@ -44,7 +48,7 @@ Sample csv:
 **SKU_LType** — The choices are:
 * A — This shows the SKU number in bold on the left, and the price on the right. A thin rule is above both. (Default is A)
 * B —  Not invented yet
-* C —  Not invented yet 
+* C —  Not invented yet
 
 **MaxImageHeight** — This is the maximum height of the images in inches. It is also the height of the image box, even if the image is not this tall. (Default is 0.5)
 
@@ -68,11 +72,7 @@ Sample csv:
 
 **SpaceCurrency** — If there should be a space after the currency symbol and before the price, this value must be "yesspace". (Default is "nospace")
 
-**PriceStyle** — The choices are:
-* Simple — The symbol, left side, and right side are all the same size
-* Superior — The symbol and the right side are half size, and top aligned
-
-**PriceFormat** — *Not yet available*. Default is #,###.## 
+**PriceFormat** — *Not yet available*. Default is #,###.##
 The choices are:
 
     #,###.##
@@ -85,6 +85,25 @@ The choices are:
     #,###.###
 
 **PriceColor** — Express as RGB hex. Default is FF0000
+
+**TextBeforeItemNum** — Any text you want to appear before the item number (SKU number), such as _Part #_. Default is null.
+
+**FontFamily** — The choices are:
+* HelveticaNeue
+* MyriadPro
+
+**StyleProdName** — The choices are:
+* none — No style will be applied to the product name
+* bold — This will cause the product name to appear bold
+
+**StyleItemNumber** — The choices are:
+* none — No style will be applied to the item number
+* bold — This will cause the item number to appear bold
+
+**StylePrice** — The choices are:
+* Simple — The symbol, left side of the price, and right side of the price are all the same size
+* Simple-bold —  Same as Simple, except the symbol and price (both left and right sides) are bolded
+* Superior — The symbol and the right side are half size, and top aligned
 
 **NumericCharWidth** —  **Not required.** This is needed only if (a)&nbsp;**PriceStyle** is set to _Superior_ and (b)&nbsp;the results look like they require tweaking. The value is the width of one numeric character at the **PriceFontSize**.
 
@@ -154,6 +173,3 @@ Sample csv:
 **PriceColor** — Same as _ImageAboveName_
 
 **NumericCharWidth** —  Same as _ImageAboveName_
-
-
-
