@@ -91,6 +91,7 @@ The choices are:
 **FontFamily** — The choices are:
 * HelveticaNeue
 * MyriadPro
+* ProximaNova
 
 **StyleProdName** — The choices are:
 * none — No style will be applied to the product name
@@ -135,9 +136,14 @@ Sample csv:
     PriceFontSize,9
     Currency,$
     SpaceCurrency,false
-    PriceStyle,simple
     PriceFormat,#,###.##
     PriceColor,FF0000
+    TextBeforeItemNum,Part #
+    FontFamily,HelveticaNeue
+    StyleProdName,none
+    StyleItemNumber,bold
+    StylePrice,simple
+
 
 
 **ImageDesc_LType** — The value must be set to _NameWrapAroundImage_
@@ -166,10 +172,18 @@ Sample csv:
 
 **SpaceCurrency** — Same as _ImageAboveName_
 
-**PriceStyle** — Same as _ImageAboveName_
-
 **PriceFormat** — Same as _ImageAboveName_
 
 **PriceColor** — Same as _ImageAboveName_
+
+**TextBeforeItemNum** — Same as _ImageAboveName_
+
+**FontFamily** — Same as _ImageAboveName_
+
+**StyleProdName** — Same as _ImageAboveName_
+
+**StyleItemNumber** — Same as _ImageAboveName_
+
+**StylePrice** — Same as _ImageAboveName_
 
 **NumericCharWidth** —  Same as _ImageAboveName_
