@@ -1,1 +1,1 @@
-[Documentation for Catalog-on-Demand Linden Plus](https://github.com/lkview/lindenplus-doc/wiki)
+[Documentation for Catalog-on-Demand Layouts Plus](https://github.com/lkview/LayoutsPlusDoc/wiki)
