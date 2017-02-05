@@ -98,9 +98,11 @@ Sample csv:
 * [NameAboveImageOnLeft](#nameaboveimageonleft)
 
 **FontFamily** — The choices are:
-* HelveticaNeue
+* HelveticaNeue (default)
+* HelveticaNeueCondensed
 * MyriadPro
 * ProximaNova
+* Arial
 
 **StyleProdName** — The choices are:
 * none — No style will be applied to the product name
@@ -126,8 +128,8 @@ Sample csv:
 
 **MaxImageWidth** — This is the maximum width of the product image in inches. (Default is 1.4)
 
-**DescFontSize** — kaj
+**DescFontSize** — Font size of the description in points. This can be a decimal number. (Default is 9)
 
-**DescLeading** — lkj
+**DescLeading** — The leading of the product description in points. This can be a decimal number. (Default is 10.8)
 
-**MaxDescHeight** — klj
+**MaxDescHeight** — This is the maximum height of the product description in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...). (Default is 2.0)
