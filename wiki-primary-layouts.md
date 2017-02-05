@@ -4,6 +4,7 @@ The Primary Layouts available so far are:
 
 [ImageAboveName](#imageabovename)  
 [NameWrapAroundImage](#namewraparoundimage)  
+[NameAndDescWrapAroundImage](#nameanddescwraparoundimage)
 [NameAboveImageOnLeft](#nameaboveimageonleft)
 
 ## *ImageAboveName*
@@ -43,6 +44,26 @@ This layout displays:
 
 **Example #1: _Name Wrap Around Image_ with _superior_ price format**
 <img src="http://app.catalog-on-demand.com/images/linden_layouts/linden-prodname-wrap-image-superior-price.PNG" width="600">
+
+In order to support this layout, the variable.csv file must contain all of the parameter labels shown below. The values (to the right of the comma) are the defaults.
+
+    ImageDesc_LType,NameWrapAroundImage
+    FontFamily,HelveticaNeue
+    StyleProdName,none
+    MaxImageHeight,0.5
+    MaxImageWidth,1.4
+    NameLRMg,0.1
+    NameFontSize,9
+    NameLeading,10.8
+
+## *NameAndDescWrapAroundImage*
+This layout displays:
+* Product name and description, wrapped around the product image
+* SKU number
+* Price (either simple or superior)
+
+**Example #1: _Name Wrap Around Image_ with _superior_ price format**
+<img src="xhttp://app.catalog-on-demand.com/images/linden_layouts/linden-prodname-wrap-image-superior-price.PNG" width="600">
 
 In order to support this layout, the variable.csv file must contain all of the parameter labels shown below. The values (to the right of the comma) are the defaults.
 
@@ -95,6 +116,7 @@ Sample csv:
 **ImageDesc_LType** — The options are:
 * [ImageAboveName](#imageabovename)
 * [NameWrapAroundImage](#namewraparoundimage)
+* [NameAndDescWrapAroundImage](#nameanddescwraparoundimage)
 * [NameAboveImageOnLeft](#nameaboveimageonleft)
 
 **FontFamily** — The choices are:
