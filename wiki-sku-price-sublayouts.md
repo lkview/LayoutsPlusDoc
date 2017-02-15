@@ -64,7 +64,7 @@ You need these parameters in your csv:
 **SpaceCurrency** — If there should be a space after the currency symbol and before the price, this value must be "yesspace". (Default is "nospace")
 
 **PriceFormat** — *Not yet available*. Default is #,###.##
-The choices are:
+The [choices](http://www.thefinancials.com/Default.aspx?SubSectionID=curformat) are:
 
     #,###.##
     #.###,##
@@ -74,6 +74,7 @@ The choices are:
     #,##,###.##
     #.###
     #,###.###
+
 
 **PriceColor** — Express as RGB hex. Default is FF0000
 
