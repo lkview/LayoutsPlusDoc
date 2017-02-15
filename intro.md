@@ -28,9 +28,9 @@ Your next steps depend on whether you are going to use LayoutsPlus with Linden o
 1. Under **Miscellaneous > Plug-Ins**, select the following:
     1. LayoutsPlus
     1. Also one of the following:
-      1. Ironwood HTML - One Col
-      1. Ironwood HTML - Two Col
-      1. Ironwood HTML - Three Col
+      1. Ironwood HTML - One Column
+      1. Ironwood HTML - Two Column
+      1. Ironwood HTML - Three Column
 
 ## II. Create and upload a LayoutsPlus parameter file
 
