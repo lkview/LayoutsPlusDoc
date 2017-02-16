@@ -154,4 +154,4 @@ Sample csv:
 
 **DescLeading** — The leading of the product description in points. This can be a decimal number. (Default is 10.8)
 
-**MaxDescHeight** — This is the maximum height of the product description in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...). (Default is 2.0). *Special note:* A value of -1 disables truncation.
+**MaxDescHeight** — This is the maximum height of the product description in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...). (Default is 2.0). *Special note:* A value of *NoMax* disables truncation.
