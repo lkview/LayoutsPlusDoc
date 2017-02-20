@@ -6,6 +6,7 @@ The Primary Layouts available so far are:
 [NameWrapAroundImage](#namewraparoundimage)  
 [NameAndDescWrapAroundImage](#nameanddescwraparoundimage)  
 [NameAboveImageOnLeft](#nameaboveimageonleft)  
+[None](#none)
 
 ## *ImageAboveName*
 This layout displays:
@@ -111,47 +112,81 @@ Sample csv:
     DescLeading,10.8
     MaxDescHeight,1.0
 
+## *None*
+Use this if you **do not** need the layout features of LayoutsPlus, but you **do** need the preliminary processing features of LayoutsPlus. For example, you would use this if you simply want the [text replacement functionality](#replacementsdesc).
+Sample csv:
+
+    ImageDesc_LType,None
+    ReplacementsDesc,cool stuff#$#hot stuff#$$#<h2>Product Description</h2>#$#
+
+
 # Parameter definitions
 
-**ImageDesc_LType** — The options are:
+#### ImageDesc_LType
+The options are:
 * [ImageAboveName](#imageabovename)
 * [NameWrapAroundImage](#namewraparoundimage)
 * [NameAndDescWrapAroundImage](#nameanddescwraparoundimage)
 * [NameAboveImageOnLeft](#nameaboveimageonleft)
 
-**FontFamily** — The choices are:
+#### FontFamily
+The choices are:
 * HelveticaNeue (default)
 * HelveticaNeueCondensed
 * MyriadPro
 * ProximaNova
 * Arial
 
-**StyleProdName** — The choices are:
+#### StyleProdName
+The choices are:
 * none — No style will be applied to the product name
 * bold — This will cause the product name to appear bold
 
-**SKU_LType** — [See Configuration of SKU/Price Sub-layouts](../wiki/Configuration-of-SKU-Price-Sub-layouts)
+#### SKU_LType
+[See Configuration of SKU/Price Sub-layouts](../wiki/Configuration-of-SKU-Price-Sub-layouts)
 
-**MaxImageHeight** — This is the maximum height of the images in inches. It is also the height of the image box, even if the image is not this tall. (Default is 0.5)
+#### MaxImageHeight
+This is the maximum height of the images in inches. It is also the height of the image box, even if the image is not this tall. (Default is 0.5)
 
-**MaxImageWidth** — This is the maximum width of the product image in inches. (Default is 1.4)
+#### MaxImageWidth
+This is the maximum width of the product image in inches. (Default is 1.4)
 
-**MaxNameHeight** — This is the maximum height of the product name in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...). (Default is 0.45)
+#### MaxNameHeight
+This is the maximum height of the product name in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...). (Default is 0.45)
 
-**NameLRMg** — The left & right margin of the product name in inches. (Default is 0.1)
+#### NameLRMg
+The left & right margin of the product name in inches. (Default is 0.1)
 
-**NameFontSize** — The font size of the product name in points. This can be a decimal number. (Default is 9)
+#### NameFontSize
+The font size of the product name in points. This can be a decimal number. (Default is 9)
 
-**NameLeading** — The leading of the product name in points. This can be a decimal number. (Default is 10.8)
+#### NameLeading
+The leading of the product name in points. This can be a decimal number. (Default is 10.8)
 
-**ImageDesc_LType** — The value must be set to _NameWrapAroundImage_
+#### ImageDesc_LType
+The value must be set to _NameWrapAroundImage_
 
-**LayoutWidth** — This is the width of the layout in inches. Only full width layouts are supported at this time. (Default is 7.3)
+#### LayoutWidth
+This is the width of the layout in inches. Only full width layouts are supported at this time. (Default is 7.3)
 
-**MaxImageWidth** — This is the maximum width of the product image in inches. (Default is 1.4)
+#### MaxImageWidth
+This is the maximum width of the product image in inches. (Default is 1.4)
 
-**DescFontSize** — Font size of the description in points. This can be a decimal number. (Default is 9)
+#### DescFontSize
+Font size of the description in points. This can be a decimal number. (Default is 9)
 
-**DescLeading** — The leading of the product description in points. This can be a decimal number. (Default is 10.8)
+#### DescLeading
+The leading of the product description in points. This can be a decimal number. (Default is 10.8)
 
-**MaxDescHeight** — This is the maximum height of the product description in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...). (Default is 2.0). *Special note:* A value of *NoMax* disables truncation.
+#### MaxDescHeight
+This is the maximum height of the product description in inches. If the text wraps beyond this height, it will be truncated with the ellipsis (...). (Default is 2.0). *Special note:* A value of *NoMax* disables truncation.
+
+#### ReplacementsDesc
+This allows text replacements in the product description. There is one row for each "find" and "replace" pair. Rows are separated by #$$#. The properties are separated by #$#. Here is an example:
+
+    ReplacementsDesc,widget#$#thing#$$#<h1>Product Features</h1>#$##$$#<h2>Product Description</h2>#$#
+This will result in the following:
+
+    "widget" is replaced by "thing"
+    "<h1>Product Features</h1>" is replaced by nothing (it is stripped out)
+    "<h2>Product Description</h2>" is replaced by nothing (it is stripped out)

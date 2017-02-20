@@ -1,4 +1,4 @@
-# Layout "A"
+# Sub-layout "A"
 Features:
 * SKU number on the left
 * Price on the right
@@ -21,7 +21,7 @@ You need these parameters in your csv:
     StyleItemNumber,bold
     StylePrice,simple
 
-# Layout "B"
+# Sub-layout "B"
 Features:
 * Shopping cart icon on the left — linked to the corresponding product page on the e-commerce site
 * SKU number in the middle
@@ -35,11 +35,11 @@ You need these parameters in your csv:
     SKU_LType,B
     Other parameters are the same as Layout A
 
-# Layout "Table"
+# Sub-layout "Table"
 Features:
 * SKU table, one row per SKU
-* Uses column hide/show settings
-* Uses column sizing settings
+* Uses column hide/show settings from the configuration
+* Uses column size settings from the configuration
 
 You need these parameters in your csv:
 
@@ -48,7 +48,7 @@ You need these parameters in your csv:
     TableHeaderLeading,9  
     TableDataFontSize,8  
 
-# Layout "CustomTable_v1"
+# Sub-layout "Table-A"
 Features:
 * SKU table, one row per SKU
 * Control font color and background color per data cells
@@ -63,9 +63,8 @@ You need these parameters in your csv:
     TableHeaderFontSize,8  
     TableHeaderLeading,9  
     TableDataFontSize,8  
-    CustomTable,
+    CustomTable,Widget No.#$#_ItemNum#$#25#$#left#$#FFFF00#$#FFFFFF#$$#Colour#$#Color#$#50#$#left#$#000000#$#FFFFFF#$$#Biomass#$#Weight#$#25#$#center#$#00ffff#$#FFFFFF
     AdditionalAttrMap,pprofit_sale#$#_Sale#$$#xyz#$#_xyz
-```
 
 
 # Reference for all sub-layouts
@@ -108,20 +107,21 @@ The [choices](http://www.thefinancials.com/Default.aspx?SubSectionID=curformat) 
 * Simple-bold —  Same as Simple, except the symbol and price (both left and right sides) are bolded
 * Superior — The symbol and the right side are half size, and top aligned
 
-**CustomTable** — This specifies the properties of the table. There is one row for each table column. Rows are separated by #$$#. The properties are separated by #$#.
+**CustomTable** — This specifies the properties of the table. There is one row for each table column. Rows are separated by #$$#. The properties are separated by #$#. Here is an example:
+
+    CustomTable,Part No.#$#_ItemNum#$#25#$#left#$#FFFF00#$#FFFFFF#$$#Colour#$#Color#$#50#$#left#$#000000#$#FFFFFF#$$#Biomass#$#Weight#$#25#$#center#$#00ffff#$#FFFFFF
 
 1. Column label — The label that will appear for that column in the table header.
 1. Attribute name — The name of the attribute as it comes from the database.
 1. Column width — The percentage width of the column. The percentages for all columns must add up to 100.
-1. Alignment - The alignment of the data cell. Must be *left*, *right*, or *center*.
+1. Data cell alignment - The alignment of the data cell. Must be *left*, *right*, or *center*.
 1. Data cell font color — The RGB hex value of the color of the font that appears in the data cell.
 1. Data cell background color — The RGB hex value of the color of the background of the data cell.
 
-**AdditionalAttrMap** — This is to convert "additional attributes" (which come from FJF files) into regular item attributes so that they can be used in the HTML table. This value consists of rows of two values. Each row requires:  
+**AdditionalAttrMap** — (not yet implemented) This is to convert "additional attributes" (which come from FJF files) into regular item attributes so that they can be used in the HTML table. This value consists of rows of two values. Each row requires:  
   1. the additional attribute name (e.g., ```pprofit_sale```); and  
   1. the regular attribute name (e.g., ```_Sale```).
 
 Rows are separated by #$$#. The values are separated by #$#. An example value is:
-```
-pprofit_sale#$#_Sale#$$#xyz#$#_xyz
-```
+
+    pprofit_sale#$#_Sale#$$#xyz#$#_xyz
